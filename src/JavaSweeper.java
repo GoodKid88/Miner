@@ -41,7 +41,8 @@ public class JavaSweeper extends JFrame {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 for (Coordinate coordinate : Ranges.getAllCoodinates()) {
-                    g.drawImage((Image) game.getBox(coordinate).image, coordinate.x * IMAGE_SIZE, coordinate.y * IMAGE_SIZE, this);
+                    g.drawImage((Image) game.getBox(coordinate).image,
+                            coordinate.x * IMAGE_SIZE, coordinate.y * IMAGE_SIZE, this);
                 }
             }
         };

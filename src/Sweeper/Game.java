@@ -27,8 +27,6 @@ public class Game {
         } else {
             return flag.get(coordinate);
         }
-
-
         //Box.values()[(coordinate.x + coordinate.y) % Box.values().length];
     }
 
